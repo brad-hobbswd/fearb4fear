@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Fear Before Fear | Introduction
+</title>
+
+<meta
+name="description"
+content="Introduction to Fear Before Fear by Bradley Hobbs.">
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--black:#080A09;
+--charcoal:#171412;
+
+--earth-dark:#2A1E17;
+--earth-medium:#5A4332;
+
+--taupe:#8D7763;
+
+--gold:#C9A67A;
+--sand:#B79A76;
+
+--ivory:#EEE6D8;
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+var(--black) 0%,
+var(--charcoal) 30%,
+var(--earth-dark) 100%
+);
+
+color:var(--ivory);
+
+line-height:1.95;
+
+overflow-x:hidden;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+radial-gradient(
+circle at top,
+rgba(201,166,122,.08),
+transparent 45%
+);
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+.intro-banner{
+
+width:100%;
+
+max-width:1200px;
+
+display:block;
+
+margin:
+40px auto
+0;
+
+border-radius:24px;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.introduction{
+
+max-width:850px;
+
+margin:auto;
+
+padding:
+80px 30px;
+}
+
+.intro-label{
+
+text-align:center;
+
+color:var(--gold);
+
+text-transform:uppercase;
+
+letter-spacing:5px;
+
+font-size:.9rem;
+
+margin-bottom:15px;
+
+}
+
+.intro-title{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:
+clamp(
+3rem,
+6vw,
+5rem
+);
+
+font-weight:700;
+
+text-align:center;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+}
+
+.divider{
+
+width:180px;
+
+height:2px;
+
+margin:
+0 auto
+60px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+}
+
+.manuscript{
+
+font-size:1.12rem;
+
+}
+
+.manuscript p{
+
+margin-bottom:1.8rem;
+
+}
+
+.navigation{
+
+margin-top:70px;
+
+padding-top:40px;
+
+border-top:
+1px solid
+rgba(201,166,122,.15);
+
+display:flex;
+
+justify-content:space-between;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.nav-btn{
+
+display:inline-block;
+
+padding:
+14px 28px;
+
+border-radius:999px;
+
+text-decoration:none;
+
+background:
+rgba(255,255,255,.03);
+
+border:
+1px solid
+rgba(201,166,122,.15);
+
+color:var(--ivory);
+
+transition:.35s;
+
+}
+
+.nav-btn:hover{
+
+transform:
+translateY(-3px);
+
+background:
+rgba(201,166,122,.08);
+
+border-color:
+rgba(201,166,122,.35);
+
+}
+
+.book-footer{
+
+margin-top:80px;
+
+text-align:center;
+
+padding-top:50px;
+
+}
+
+.footer-divider{
+
+width:180px;
+
+height:2px;
+
+margin:
+0 auto
+35px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+}
+
+.copyright{
+
+font-size:.9rem;
+
+color:var(--taupe);
+
+margin-bottom:12px;
+
+}
+
+.footer-book-title{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:2rem;
+
+margin-bottom:10px;
+
+}
+
+.footer-subtitle{
+
+font-size:.85rem;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:var(--sand);
+
+margin-bottom:20px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+color:var(--gold);
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:var(--ivory);
+
+}
+
+.separator{
+
+color:var(--taupe);
+
+}
+
+@media(max-width:768px){
+
+.introduction{
+
+padding:
+60px 20px;
+
+}
+
+.manuscript{
+
+font-size:1rem;
+
+}
+
+.navigation{
+
+flex-direction:column;
+
+}
+
+.nav-btn{
+
+text-align:center;
+
+}
+
+.footer-links{
+
+flex-direction:column;
+
+}
+
+.separator{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img
+src="images/fear-before-fear-banner.jpg"
+alt="Fear Before Fear"
+class="intro-banner">
+
+<section class="introduction">
+
+<div class="intro-label">
+Introduction
+</div>
+
+<h1 class="intro-title">
+Fear Before Fear
+</h1>
+
+<div class="divider"></div>
+
+<div class="manuscript">
+
+<p>
+Most people believe fear begins the moment they feel afraid.
+</p>
+
+<p>
+A racing heart, restless thoughts, sleepless nights, and anxious anticipation all seem to signal fear's arrival. Since those moments are often the first time we become aware of fear, it is easy to assume that fear begins there.
+</p>
+
+<p>
+I am no longer convinced that it does.
+</p>
+
+<p>
+The question that led to this book is surprisingly simple: What if fear begins long before we feel it?
+</p>
+
+<p>
+Every visible thing has an unseen beginning. Trees grow from roots hidden beneath the soil. Buildings rise from foundations buried beneath the ground. In much the same way, fear often appears to emerge suddenly, yet its origins may stretch much further back than we realize.
+</p>
+
+<p>
+A possibility enters the mind. An uncertainty seeks an explanation. A story begins to take shape. Before long, what started as a passing thought can become something powerful enough to influence decisions, relationships, and the way we see the future.
+</p>
+
+<p>
+This book is an exploration of that hidden process.
+</p>
+
+<p>
+Rather than focusing only on fear after it has taken hold, we will journey upstream to examine where fear begins, how it develops, and why understanding its earliest stages may be one of the most important steps toward lasting freedom.
+</p>
+
+<p>
+Fear may not begin where we think it does.
+</p>
+
+<p>
+That possibility changes everything.
+</p>
+
+</div>
+
+<div class="navigation">
+
+<a
+href="contents.html"
+class="nav-btn">
+← Contents
+</a>
+
+<a
+href="chapter1.html"
+class="nav-btn">
+Chapter 1 →
+</a>
+
+</div>
+
+<footer class="book-footer">
+
+<div class="footer-divider"></div>
+
+<p class="copyright">
+© 2026 Bradley Hobbs. All Rights Reserved.
+</p>
+
+<h3 class="footer-book-title">
+Fear Before Fear
+</h3>
+
+<p class="footer-subtitle">
+Understanding How Fear Begins Before We Feel It
+</p>
+
+<div class="footer-links">
+
+<a
+href="https://brad-hobbswd.github.io/brad-hobbswd"
+target="_blank"
+rel="noopener noreferrer">
+Brad Hobbs Web Design
+</a>
+
+<span class="separator">
+•
+</span>
+
+<a
+href="https://brad-hobbswd.github.io/clients"
+target="_blank"
+rel="noopener noreferrer">
+Client Portfolio
+</a>
+
+</div>
+
+</footer>
+
+</section>
+
+</body>
+</html>
