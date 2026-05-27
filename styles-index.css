@@ -1,0 +1,441 @@
+/* ====================================
+   FEAR BEFORE FEAR
+   Homepage Styles
+==================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--black:#080A09;
+--charcoal:#171412;
+
+--earth-dark:#2A1E17;
+--earth-medium:#5A4332;
+
+--taupe:#8D7763;
+
+--gold:#C9A67A;
+--sand:#B79A76;
+
+--ivory:#EEE6D8;
+
+--olive:#69724A;
+--sage:#7C8860;
+--sprout:#A7B46D;
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+var(--black) 0%,
+var(--charcoal) 30%,
+var(--earth-dark) 100%
+);
+
+color:var(--ivory);
+
+line-height:1.8;
+
+overflow-x:hidden;
+
+min-height:100vh;
+}
+
+body::before{
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+radial-gradient(
+circle at top,
+rgba(201,166,122,.08),
+transparent 45%
+);
+
+pointer-events:none;
+
+z-index:-1;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+padding:40px 25px 80px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.banner-wrapper{
+position:relative;
+
+width:100%;
+max-width:1200px;
+}
+
+.hero-banner{
+width:100%;
+
+display:block;
+
+border-radius:24px;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.45);
+}
+
+.banner-overlay{
+position:absolute;
+
+left:50%;
+bottom:40px;
+
+transform:translateX(-50%);
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+display:inline-block;
+
+padding:16px 38px;
+
+border-radius:999px;
+
+text-decoration:none;
+
+background:var(--gold);
+
+color:var(--black);
+
+font-weight:600;
+
+font-size:1rem;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.3);
+
+transition:.35s ease;
+}
+
+.btn:hover{
+transform:
+translateY(-3px);
+
+background:var(--ivory);
+}
+
+/* ==========================
+   GENERAL SECTIONS
+========================== */
+
+.section{
+max-width:1000px;
+
+margin:auto;
+
+padding:90px 30px;
+}
+
+.section h2{
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:3rem;
+
+text-align:center;
+
+margin-bottom:35px;
+
+color:var(--ivory);
+}
+
+/* ==========================
+   ABOUT BOOK
+========================== */
+
+.about p{
+max-width:850px;
+
+margin:auto;
+
+font-size:1.1rem;
+
+text-align:center;
+
+color:var(--sand);
+}
+
+/* ==========================
+   QUOTE
+========================== */
+
+.quote{
+text-align:center;
+}
+
+.quote blockquote{
+max-width:900px;
+
+margin:auto;
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:2.5rem;
+
+font-style:italic;
+
+color:var(--gold);
+}
+
+/* ==========================
+   NAVIGATION CARDS
+========================== */
+
+.navigation{
+display:grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(250px,1fr)
+);
+
+gap:22px;
+
+margin-top:50px;
+}
+
+.card{
+padding:35px;
+
+border-radius:18px;
+
+background:
+rgba(255,255,255,.03);
+
+border:
+1px solid
+rgba(201,166,122,.12);
+
+text-decoration:none;
+
+color:var(--ivory);
+
+transition:.35s ease;
+}
+
+.card:hover{
+transform:
+translateY(-6px);
+
+background:
+rgba(201,166,122,.08);
+
+border-color:
+rgba(201,166,122,.35);
+}
+
+.card h3{
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:2rem;
+
+margin-bottom:10px;
+}
+
+.card p{
+color:var(--sand);
+}
+
+/* ==========================
+   AUTHOR
+========================== */
+
+.author{
+text-align:center;
+}
+
+.author p{
+max-width:800px;
+
+margin:auto;
+
+color:var(--sand);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.book-footer{
+
+margin-top:80px;
+
+padding:60px 30px;
+
+text-align:center;
+
+border-top:
+1px solid
+rgba(201,166,122,.15);
+
+}
+
+.footer-divider{
+
+width:180px;
+height:2px;
+
+margin:0 auto 35px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+}
+
+.copyright{
+
+font-size:.9rem;
+
+color:var(--taupe);
+
+margin-bottom:12px;
+
+}
+
+.footer-book-title{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:2rem;
+
+color:var(--ivory);
+
+margin-bottom:10px;
+
+}
+
+.footer-subtitle{
+
+font-size:.9rem;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:var(--sand);
+
+margin-bottom:25px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+color:var(--gold);
+
+text-decoration:none;
+
+transition:.3s ease;
+
+}
+
+.footer-links a:hover{
+
+color:var(--ivory);
+
+}
+
+.separator{
+
+color:var(--taupe);
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.hero{
+padding:20px 15px 60px;
+}
+
+.banner-overlay{
+bottom:20px;
+}
+
+.btn{
+padding:14px 28px;
+font-size:.9rem;
+}
+
+.section{
+padding:70px 20px;
+}
+
+.section h2{
+font-size:2.3rem;
+}
+
+.quote blockquote{
+font-size:1.8rem;
+}
+
+.footer-links{
+flex-direction:column;
+}
+
+.separator{
+display:none;
+}
+
+}
