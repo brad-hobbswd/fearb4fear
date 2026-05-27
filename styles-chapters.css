@@ -1,0 +1,461 @@
+/* ====================================
+   FEAR BEFORE FEAR
+   Chapter Styles
+==================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--black:#080A09;
+--charcoal:#171412;
+
+--earth-dark:#2A1E17;
+--earth-medium:#5A4332;
+
+--taupe:#8D7763;
+
+--gold:#C9A67A;
+--sand:#B79A76;
+
+--ivory:#EEE6D8;
+
+--olive:#69724A;
+--sage:#7C8860;
+--sprout:#A7B46D;
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+var(--black) 0%,
+var(--charcoal) 30%,
+var(--earth-dark) 100%
+);
+
+color:var(--ivory);
+
+line-height:1.95;
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+radial-gradient(
+circle at top,
+rgba(201,166,122,.06),
+transparent 50%
+);
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+/* ==========================
+   PAGE CONTAINER
+========================== */
+
+.chapter-container{
+
+max-width:900px;
+
+margin:auto;
+
+padding:
+100px
+30px
+80px;
+
+}
+
+/* ==========================
+   CHAPTER NUMBER
+========================== */
+
+.chapter-number{
+
+text-align:center;
+
+color:var(--gold);
+
+font-size:.95rem;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+margin-bottom:20px;
+
+}
+
+/* ==========================
+   CHAPTER TITLE
+========================== */
+
+.chapter-title{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:
+clamp(
+3rem,
+5vw,
+4.5rem
+);
+
+font-weight:700;
+
+line-height:1.15;
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:var(--ivory);
+
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+.chapter-divider{
+
+width:160px;
+
+height:2px;
+
+margin:
+0 auto
+60px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+}
+
+/* ==========================
+   CHAPTER CONTENT
+========================== */
+
+.chapter-content{
+
+font-size:1.12rem;
+
+color:var(--ivory);
+
+}
+
+.chapter-content p{
+
+margin-bottom:1.8rem;
+
+}
+
+.chapter-content strong{
+
+color:var(--gold);
+
+font-weight:600;
+
+}
+
+.chapter-content em{
+
+color:var(--sand);
+
+}
+
+/* ==========================
+   BLOCKQUOTE
+========================== */
+
+blockquote{
+
+margin:
+50px auto;
+
+padding:
+25px 35px;
+
+border-left:
+4px solid
+var(--gold);
+
+background:
+rgba(255,255,255,.03);
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:1.7rem;
+
+font-style:italic;
+
+color:var(--gold);
+
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+.chapter-navigation{
+
+margin-top:100px;
+
+padding-top:50px;
+
+border-top:
+1px solid
+rgba(201,166,122,.15);
+
+display:flex;
+
+justify-content:space-between;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.nav-button{
+
+display:inline-block;
+
+padding:
+14px 28px;
+
+border-radius:999px;
+
+text-decoration:none;
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid
+rgba(201,166,122,.15);
+
+color:var(--ivory);
+
+transition:.35s ease;
+
+}
+
+.nav-button:hover{
+
+background:
+rgba(201,166,122,.1);
+
+border-color:
+rgba(201,166,122,.35);
+
+transform:
+translateY(-3px);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.book-footer{
+
+margin-top:80px;
+
+text-align:center;
+
+padding-top:40px;
+
+}
+
+.footer-divider{
+
+width:180px;
+
+height:2px;
+
+margin:
+0 auto
+35px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+
+}
+
+.copyright{
+
+font-size:.9rem;
+
+color:var(--taupe);
+
+margin-bottom:12px;
+
+}
+
+.footer-book-title{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:2rem;
+
+margin-bottom:10px;
+
+color:var(--ivory);
+
+}
+
+.footer-subtitle{
+
+font-size:.85rem;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:var(--sand);
+
+margin-bottom:20px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+color:var(--gold);
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:var(--ivory);
+
+}
+
+.separator{
+
+color:var(--taupe);
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.chapter-container{
+
+padding:
+80px
+20px
+60px;
+
+}
+
+.chapter-title{
+
+font-size:2.7rem;
+
+}
+
+.chapter-content{
+
+font-size:1rem;
+
+}
+
+blockquote{
+
+font-size:1.35rem;
+
+padding:
+20px
+25px;
+
+}
+
+.chapter-navigation{
+
+flex-direction:column;
+
+}
+
+.nav-button{
+
+text-align:center;
+
+}
+
+.footer-links{
+
+flex-direction:column;
+
+}
+
+.separator{
+
+display:none;
+
+}
+
+}
