@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Fear Before Fear | Contents
+</title>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--black:#080A09;
+--charcoal:#171412;
+
+--earth-dark:#2A1E17;
+--earth-medium:#5A4332;
+
+--taupe:#8D7763;
+
+--gold:#C9A67A;
+--sand:#B79A76;
+
+--ivory:#EEE6D8;
+
+--olive:#69724A;
+--sage:#7C8860;
+--sprout:#A7B46D;
+
+}
+
+body{
+background:
+linear-gradient(
+180deg,
+var(--black) 0%,
+var(--charcoal) 30%,
+var(--earth-dark) 100%
+);
+color:var(--ivory);
+font-family:'Inter',sans-serif;
+line-height:1.8;
+min-height:100vh;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(
+circle at top,
+rgba(201,166,122,.08),
+transparent 45%
+);
+pointer-events:none;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:90px 30px;
+position:relative;
+z-index:1;
+}
+
+.seed-icon{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:10px;
+opacity:.85;
+}
+
+.book-title{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3.5rem,6vw,5.5rem);
+font-weight:700;
+letter-spacing:3px;
+color:var(--ivory);
+margin-bottom:12px;
+text-shadow:
+0 4px 20px rgba(0,0,0,.5);
+}
+
+.subtitle{
+text-align:center;
+font-size:.95rem;
+letter-spacing:3px;
+text-transform:uppercase;
+color:var(--gold);
+margin-bottom:70px;
+}
+
+.divider{
+width:180px;
+height:2px;
+margin:0 auto 70px;
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+}
+
+.section-title{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:2.3rem;
+font-weight:600;
+margin-bottom:45px;
+color:var(--ivory);
+}
+
+.contents{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+.contents a{
+display:flex;
+justify-content:space-between;
+align-items:center;
+text-decoration:none;
+padding:15px 20px;
+border-radius:12px;
+color:var(--ivory);
+
+background:
+rgba(255,255,255,.02);
+
+border:1px solid
+rgba(201,166,122,.12);
+
+backdrop-filter:blur(4px);
+
+transition:
+transform .3s ease,
+background .3s ease,
+border-color .3s ease;
+}
+
+.contents a:hover{
+transform:translateX(10px);
+background:
+rgba(201,166,122,.08);
+
+border-color:
+rgba(201,166,122,.35);
+}
+
+.chapter-name{
+font-size:1.05rem;
+}
+
+.page{
+color:var(--sand);
+font-size:.95rem;
+font-weight:500;
+}
+
+.footer-quote{
+margin-top:100px;
+padding-top:50px;
+border-top:
+1px solid
+rgba(201,166,122,.15);
+
+text-align:center;
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:1.9rem;
+font-style:italic;
+
+color:var(--gold);
+}
+
+.footer-note{
+margin-top:20px;
+text-align:center;
+font-size:.95rem;
+color:var(--taupe);
+}
+
+.book-footer{
+margin-top:50px;
+text-align:center;
+padding-bottom:30px;
+}
+
+.footer-divider{
+width:180px;
+height:2px;
+margin:0 auto 35px;
+background:
+linear-gradient(
+90deg,
+transparent,
+var(--gold),
+transparent
+);
+}
+
+.copyright{
+font-size:.9rem;
+color:var(--taupe);
+margin-bottom:12px;
+letter-spacing:1px;
+}
+
+.footer-book-title{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+font-weight:600;
+color:var(--ivory);
+margin-bottom:10px;
+}
+
+.footer-subtitle{
+font-size:.9rem;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--sand);
+margin-bottom:25px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+color:var(--gold);
+text-decoration:none;
+transition:.3s ease;
+}
+
+.footer-links a:hover{
+color:var(--ivory);
+}
+
+.separator{
+color:var(--taupe);
+}
+
+@media(max-width:700px){
+
+.container{
+padding:70px 20px;
+}
+
+.book-title{
+font-size:3rem;
+}
+
+.chapter-name{
+font-size:.95rem;
+padding-right:15px;
+}
+
+.footer-quote{
+font-size:1.5rem;
+}
+
+.footer-links{
+flex-direction:column;
+gap:8px;
+}
+
+.separator{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="seed-icon">
+🌱
+</div>
+
+<h1 class="book-title">
+Fear Before Fear
+</h1>
+
+<p class="subtitle">
+Understanding How Fear Begins Before We Feel It
+</p>
+
+<div class="divider"></div>
+
+<h2 class="section-title">
+Contents
+</h2>
+
+<div class="contents">
+
+<a href="introduction.html">
+<span class="chapter-name">Introduction</span>
+<span class="page">1</span>
+</a>
+
+<a href="chapter1.html">
+<span class="chapter-name">Chapter 1 • Every Fear Has a Beginning</span>
+<span class="page">5</span>
+</a>
+
+<a href="chapter2.html">
+<span class="chapter-name">Chapter 2 • The First Story</span>
+<span class="page">11</span>
+</a>
+
+<a href="chapter3.html">
+<span class="chapter-name">Chapter 3 • The Birth of What If</span>
+<span class="page">18</span>
+</a>
+
+<a href="chapter4.html">
+<span class="chapter-name">Chapter 4 • When Possibility Becomes Expectation</span>
+<span class="page">25</span>
+</a>
+
+<a href="chapter5.html">
+<span class="chapter-name">Chapter 5 • The Mind's Need for Certainty</span>
+<span class="page">33</span>
+</a>
+
+<a href="chapter6.html">
+<span class="chapter-name">Chapter 6 • When Yesterday Becomes Tomorrow</span>
+<span class="page">41</span>
+</a>
+
+<a href="chapter7.html">
+<span class="chapter-name">Chapter 7 • The Illusion of Control</span>
+<span class="page">49</span>
+</a>
+
+<a href="chapter8.html">
+<span class="chapter-name">Chapter 8 • The Fear Beneath the Fear</span>
+<span class="page">58</span>
+</a>
+
+<a href="chapter9.html">
+<span class="chapter-name">Chapter 9 • Feeding the Fear</span>
+<span class="page">67</span>
+</a>
+
+<a href="chapter10.html">
+<span class="chapter-name">Chapter 10 • The Stories We Believe About Ourselves</span>
+<span class="page">76</span>
+</a>
+
+<a href="chapter11.html">
+<span class="chapter-name">Chapter 11 • The Lens of Fear</span>
+<span class="page">86</span>
+</a>
+
+<a href="chapter12.html">
+<span class="chapter-name">Chapter 12 • The Moment Everything Changes</span>
+<span class="page">96</span>
+</a>
+
+<a href="chapter13.html">
+<span class="chapter-name">Chapter 13 • Learning to Live With the Unanswered</span>
+<span class="page">106</span>
+</a>
+
+<a href="chapter14.html">
+<span class="chapter-name">Chapter 14 • The Space Between Thought and Belief</span>
+<span class="page">116</span>
+</a>
+
+<a href="chapter15.html">
+<span class="chapter-name">Chapter 15 • Fear's Greatest Question</span>
+<span class="page">126</span>
+</a>
+
+<a href="chapter16.html">
+<span class="chapter-name">Chapter 16 • The Life We Miss While Waiting</span>
+<span class="page">137</span>
+</a>
+
+<a href="chapter17.html">
+<span class="chapter-name">Chapter 17 • The Future Fear Cannot See</span>
+<span class="page">148</span>
+</a>
+
+<a href="chapter18.html">
+<span class="chapter-name">Chapter 18 • The Fear of Fear</span>
+<span class="page">159</span>
+</a>
+
+<a href="chapter19.html">
+<span class="chapter-name">Chapter 19 • The Difference Between Certainty and Trust</span>
+<span class="page">170</span>
+</a>
+
+<a href="chapter20.html">
+<span class="chapter-name">Chapter 20 • The Moment Fear Becomes Fear</span>
+<span class="page">182</span>
+</a>
+
+<a href="chapter21.html">
+<span class="chapter-name">Chapter 21 • The Life Before Fear</span>
+<span class="page">194</span>
+</a>
+
+<a href="chapter22.html">
+<span class="chapter-name">Chapter 22 • The Cost of an Imagined Future</span>
+<span class="page">206</span>
+</a>
+
+<a href="chapter23.html">
+<span class="chapter-name">Chapter 23 • Before Fear</span>
+<span class="page">219</span>
+</a>
+
+</div>
+
+<div class="footer-quote">
+"Fear often begins long before we feel it."
+</div>
+
+<div class="footer-note">
+A journey into the hidden origins of fear.
+</div>
+
+<footer class="book-footer">
+
+<div class="footer-divider"></div>
+
+<p class="copyright">
+© 2026 Bradley Hobbs. All Rights Reserved.
+</p>
+
+<h3 class="footer-book-title">
+Fear Before Fear
+</h3>
+
+<p class="footer-subtitle">
+Understanding How Fear Begins Before We Feel It
+</p>
+
+<div class="footer-links">
+
+<a
+href="https://brad-hobbswd.github.io/brad-hobbswd"
+target="_blank"
+rel="noopener noreferrer">
+Brad Hobbs Web Design
+</a>
+
+<span class="separator">•</span>
+
+<a
+href="https://brad-hobbswd.github.io/clients"
+target="_blank"
+rel="noopener noreferrer">
+Client Portfolio
+</a>
+
+</div>
+
+</footer>
+
+</div>
+
+</body>
+</html>
