@@ -74,11 +74,11 @@ z-index:-1;
 }
 
 /* ==========================
-   HERO
+HERO
 ========================== */
 
 .hero{
-padding:40px 25px 80px;
+padding:30px 25px 100px;
 
 display:flex;
 justify-content:center;
@@ -94,7 +94,6 @@ max-width:1200px;
 
 .hero-banner{
 width:100%;
-
 display:block;
 
 border-radius:24px;
@@ -107,43 +106,53 @@ box-shadow:
 position:absolute;
 
 left:50%;
-bottom:40px;
+bottom:6%;
 
 transform:translateX(-50%);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+width:100%;
+pointer-events:none;
 }
 
 /* ==========================
-   BUTTONS
+BUTTONS
 ========================== */
 
 .btn{
 display:inline-block;
 
-padding:16px 38px;
+padding:18px 42px;
 
 border-radius:999px;
 
 text-decoration:none;
 
-background:var(--gold);
+background:var(–gold);
 
-color:var(--black);
+color:var(–black);
 
-font-weight:600;
+font-weight:700;
 
 font-size:1rem;
 
+letter-spacing:.5px;
+
 box-shadow:
-0 10px 30px rgba(0,0,0,.3);
+0 12px 35px rgba(0,0,0,.35);
 
 transition:.35s ease;
+
+pointer-events:auto;
 }
 
 .btn:hover{
-transform:
-translateY(-3px);
+transform:translateY(-4px);
 
-background:var(--ivory);
+background:var(–ivory);
 }
 
 /* ==========================
@@ -410,13 +419,12 @@ padding:20px 15px 60px;
 }
 
 .banner-overlay{
-bottom:20px;
+bottom:4%;
 }
 
 .btn{
-padding:14px 28px;
+padding:14px 30px;
 font-size:.9rem;
-margin-top:220px;
 }
 
 .section{
