@@ -78,7 +78,7 @@ HERO
 ========================== */
 
 .hero{
-padding:30px 25px 100px;
+padding:30px 25px 60px;
 
 display:flex;
 justify-content:center;
@@ -86,10 +86,12 @@ align-items:center;
 }
 
 .banner-wrapper{
-position:relative;
-
 width:100%;
 max-width:1200px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
 .hero-banner{
@@ -103,19 +105,36 @@ box-shadow:
 }
 
 .banner-overlay{
-position:absolute;
+margin-top:30px;
+}
 
-left:50%;
-bottom:6%;
+.btn{
+display:inline-block;
 
-transform:translateX(-50%);
+padding:18px 42px;
 
-display:flex;
-justify-content:center;
-align-items:center;
+border-radius:999px;
 
-width:100%;
-pointer-events:none;
+text-decoration:none;
+
+background:var(--gold);
+
+color:var(--black);
+
+font-weight:700;
+
+font-size:1rem;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.35);
+
+transition:.35s ease;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+
+background:var(--ivory);
 }
 
 /* ==========================
