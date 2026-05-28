@@ -42,7 +42,7 @@ background:
 linear-gradient(
 180deg,
 var(–black) 0%,
-var(–charcoal) 30%,
+var(–charcoal) 25%,
 var(–earth-dark) 100%
 );
 
@@ -67,8 +67,8 @@ inset:0;
 background:
 radial-gradient(
 circle at top,
-rgba(201,166,122,.08),
-transparent 45%
+rgba(167,180,109,.10),
+transparent 50%
 );
 
 pointer-events:none;
@@ -135,7 +135,7 @@ border-radius:999px;
 
 text-decoration:none;
 
-background:var(–gold);
+background:var(–sprout);
 
 color:var(–black);
 
@@ -156,7 +156,7 @@ transition:.35s ease;
 
 transform:translateY(-4px);
 
-background:var(–ivory);
+background:var(–gold);
 
 }
 
@@ -189,6 +189,9 @@ text-align:center;
 margin-bottom:50px;
 
 color:var(–ivory);
+
+text-shadow:
+0 0 25px rgba(167,180,109,.12);
 
 }
 
@@ -238,7 +241,7 @@ font-style:italic;
 
 line-height:1.4;
 
-color:var(–gold);
+color:var(–sprout);
 
 }
 
@@ -273,7 +276,7 @@ rgba(255,255,255,.03);
 
 border:
 1px solid
-rgba(201,166,122,.12);
+rgba(167,180,109,.15);
 
 text-decoration:none;
 
@@ -288,10 +291,13 @@ transition:.35s ease;
 transform:translateY(-6px);
 
 background:
-rgba(201,166,122,.08);
+rgba(167,180,109,.10);
 
 border-color:
-rgba(201,166,122,.35);
+rgba(167,180,109,.45);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.25);
 
 }
 
@@ -304,6 +310,8 @@ serif;
 font-size:2rem;
 
 margin-bottom:10px;
+
+color:var(–gold);
 
 }
 
@@ -353,7 +361,7 @@ text-align:center;
 
 border-top:
 1px solid
-rgba(201,166,122,.15);
+rgba(167,180,109,.20);
 
 }
 
@@ -368,7 +376,7 @@ background:
 linear-gradient(
 90deg,
 transparent,
-var(–gold),
+var(–sprout),
 transparent
 );
 
@@ -438,7 +446,7 @@ transition:.3s ease;
 
 .footer-links a:hover{
 
-color:var(–ivory);
+color:var(–sprout);
 
 }
 
@@ -455,65 +463,44 @@ RESPONSIVE
 @media(max-width:768px){
 
 .hero{
-
 padding:20px 15px 50px;
-
 }
 
 .banner-overlay{
-
 margin-top:25px;
 margin-bottom:10px;
-
 }
 
 .btn{
-
 padding:14px 30px;
-
 font-size:.9rem;
-
 }
 
 .section{
-
 padding:80px 20px;
-
 }
 
 .section h2{
-
 font-size:2.4rem;
-
 margin-bottom:35px;
-
 }
 
 .about p,
 .author p{
-
 font-size:1rem;
-
 line-height:1.9;
-
 }
 
 .quote blockquote{
-
 font-size:1.8rem;
-
 }
 
 .footer-links{
-
 flex-direction:column;
-
 }
 
 .separator{
-
 display:none;
-
 }
 
 }
