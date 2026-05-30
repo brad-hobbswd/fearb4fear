@@ -1,38 +1,48 @@
-Fear Before Fear: Understanding How Fear Begins Before We Feel It
+Fear Before Fear
+
+Understanding How Fear Begins Before We Feel It
 
 Fear often begins long before anxiety is felt.
 
-Fear Before Fear: Understanding How Fear Begins Before We Feel It explores the hidden assumptions, expectations, imagined futures, internal narratives, and quiet thought patterns that shape fear beneath the surface long before panic, worry, or dread become visible.
+Fear Before Fear explores the hidden roots of fear that quietly develop beneath the surface before worry, anxiety, dread, or panic ever appear.
 
-This book journeys beneath the symptoms of fear to examine where fear often begins and how those unseen roots influence relationships, decisions, faith, identity, and daily life.
+Assumptions, expectations, imagined futures, painful memories, internal narratives, and unseen thought patterns often shape fear long before fear is recognized. This book journeys beneath the symptoms to explore where fear begins and how understanding those roots can open the door to healing, peace, freedom, and hope.
 
-Through reflection, insight, hope, and practical understanding, readers are invited to recognize fear before fear and discover a path toward greater peace, freedom, and healing.
+⸻
 
-Themes
+What This Book Explores
 
-* Fear and anxiety
-* Internal narratives
+* Hidden origins of fear
 * Assumptions and expectations
+* Internal narratives and self talk
+* Imagined futures and uncertainty
 * Emotional awareness
 * Healing and restoration
-* Faith and hope
-* Personal growth
-* Understanding thought patterns
+* Faith, hope, and resilience
+* Discovering peace before fear takes hold
 
-Website
+⸻
 
-Read online:
+Read Online
+
+🌐 Live Website
 
 https://brad-hobbswd.github.io/fearb4fear/
 
-Author
+⸻
 
-Bradley Hobbs
+About the Author
 
-Author, storyteller, and creator of faith centered books, devotionals, memoirs, and healing journeys focused on grace, restoration, hope, and spiritual growth.
+Bradley Hobbs is an author, storyteller, and creator whose work focuses on healing, restoration, grace, faith, hope, and personal transformation. Through books, devotionals, memoirs, and digital projects, he seeks to encourage readers through honest reflection and meaningful stories.
 
-License
+⸻
 
-All rights reserved.
+Copyright
 
 © Bradley Hobbs
+
+All rights reserved. No portion of this publication may be reproduced, distributed, or transmitted in any form or by any means without prior written permission from the author.
+
+⸻
+
+“Understanding fear before fear may change everything.”
